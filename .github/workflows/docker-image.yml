@@ -20,7 +20,7 @@ jobs:
 
     - name: Compile the crate for the AVR atmega328p
       run:
-        docker run rust-avr-ci:$GITHUB_RUN_NUMBER build -Z build-std=core --target avr-atmega328p.json --release
+        docker run rust-avr-ci:$GITHUB_RUN_NUMBER build -Z build-std=core --target avr-atmega328p.json --release --all --bins --examples
 
     - name: Compile the crate for the host machine and and run tests
       run:
