@@ -6,4 +6,4 @@ A template for Rust based AVR executables.
 
 Provides:
 
-  * Absolutely nothing
+  * A Rust target specification JSON for ATmega328P - `avr-atmega328p.json`
