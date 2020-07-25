@@ -7,3 +7,14 @@ A template for Rust based AVR executables.
 Provides:
 
   * A Rust target specification JSON for ATmega328P - `avr-atmega328p.json`
+
+## Build instructions
+
+Install Rust nightly.
+
+Then run:
+
+```
+cargo build --target avr-atmega328p.json -Z build-std=core --release
+```
+
